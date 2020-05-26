@@ -55,6 +55,4 @@ const mapStatetoProps = (state) => ({
   leads: state.leads.leads,
 });
 
-const mapDispatchtoProps = () => {};
-
 export default connect(mapStatetoProps, { getLeads, deleteLead })(Leads);
