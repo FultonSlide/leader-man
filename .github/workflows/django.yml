@@ -23,4 +23,5 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: Run Tests
       run: |
-        python manage.py test
+        pipenv shell
+        python leadmanager/manage.py test
