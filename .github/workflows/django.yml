@@ -24,7 +24,7 @@ jobs:
     - name: Install Dependencies
       run: |
         python -m pip install --upgrade pip
-        pip3 install django pip install djangorestframework django-rest-knox
+        pip3 install django djangorestframework django-rest-knox
     - name: Run Tests
       run: |
         python leadmanager/manage.py test
