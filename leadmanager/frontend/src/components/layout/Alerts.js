@@ -7,7 +7,7 @@ export class Alerts extends Component {
   static propTypes = {
     error: PropTypes.object.isRequired,
     message: PropTypes.object.isRequired,
-    alert: this.propTypes.object.isRequired
+    alert: PropTypes.object.isRequired
   };
 
   componentDidUpdate (prevProps) {
@@ -20,11 +20,11 @@ export class Alerts extends Component {
 
     if (message !== prevProps.message) {
       if (message.deleteLead) alert.success(message.deleteLead)
-      if (message.addLead) alert.error(message.addLead)
+      if (message.addLead) alert.success(message.addLead)
     }
   }
 
-  render() {
+  render () {
     return <Fragment />
   }
 }
