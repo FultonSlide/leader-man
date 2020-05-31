@@ -1,5 +1,5 @@
 # leader-man
-React/Redux/Django lead manager
+React/Redux/Django lead manager app
 
 # Run server:
 python manage.py runserver
