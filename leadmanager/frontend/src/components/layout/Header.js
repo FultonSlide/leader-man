@@ -14,7 +14,7 @@ export class Header extends Component {
     const { isAuthenticated, user } = this.props.auth
 
     const authLinks = (
-      <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
+      <ul className="navbar-nav ml-auto mt-2 mt-lg-0">
         <span className="navbar-text mr-3">
           <strong>
             { user ? `Welcome ${user.username}` : '' }
@@ -29,7 +29,7 @@ export class Header extends Component {
     )
 
     const guestLinks = (
-      <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
+      <ul className="navbar-nav ml-auto mt-2 mt-lg-0">
         <li className="nav-item">
           <Link to="/register" className="nav-link">Register</Link>
         </li>
