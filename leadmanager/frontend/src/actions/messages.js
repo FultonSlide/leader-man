@@ -1,12 +1,12 @@
-import { CREATE_MESSAGE, GET_ERRORS } from "../actions/types";
+import { CREATE_MESSAGE, GET_ERRORS } from '../actions/types'
 
 // Create message
 export const createMessage = (msg) => {
   return {
     type: CREATE_MESSAGE,
-    payload: msg,
-  };
-};
+    payload: msg
+  }
+}
 
 // Return errors
 export const returnErrors = (msg, status) => {
